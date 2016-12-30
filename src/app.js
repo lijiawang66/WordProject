@@ -1,18 +1,6 @@
-require('./styles/app.scss');
+require('./styles/usage/app.scss');
+var common = require('./scripts/utils/util.common.js');
 
-//
-// var string = require('./scripts/common');
-// console.log(string);
+var html = require('./scripts/tpls/index.html')
 
-
-//import Name from './scripts/common';
-//console.log(Name);
-
- var coon = require('./scripts/common');
-//
- coon.getList();
-
-// import d from './scripts/es6.js';
-
-// console.log(d);
-// console.log(ES6);
+common.render(html);

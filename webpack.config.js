@@ -32,6 +32,10 @@ module.exports = {
         test: /\.scss$/,
         // loader: 'style!css!sass'
         loader: ET.extract('style', 'css!sass')
+      },
+      {
+        test:/\.html$/,
+        loader:'string'
       }
     ]
   },
@@ -40,9 +44,9 @@ module.exports = {
     contentBase: __dirname + '/prd',
     port: 80,
     host: 'localhost',
-    inline: true,
+    /*inline: true,
     hot: true,
-    progress: true,
+    progress: true,*/
     proxy: {
       '/api': {
         target: 'http://localhost:9000',
