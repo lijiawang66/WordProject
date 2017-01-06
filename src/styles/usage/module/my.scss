@@ -1,0 +1,5 @@
+@import "./common";
+.my {
+  @include flex();
+  width: 100%;
+}

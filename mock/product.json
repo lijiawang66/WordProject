@@ -1,0 +1,82 @@
+[
+  {
+    "img":"./images/1.jpg",
+    "price":"￥43",
+    "title": "百年栗园 北京油鸡母鸡 750g"
+  },
+  {
+    "img":"./images/2.jpg",
+    "price":"￥14.50",
+    "title": "通记莊 红枣葡萄沙琪玛 320g"
+  },
+   {
+      "img":"./images/3.jpg",
+      "price":"￥12.50",
+      "title": "ABC 杂粮谷物棒-蛋黄味180g"
+    },
+    {
+        "img":"./images/4.jpg",
+        "price":"￥119",
+        "title": "德亚酸牛奶 200ml*24"
+    },
+    {
+        "img":"./images/5.jpg",
+        "price":"￥12",
+        "title": "界界乐 芒果乳酸菌 100ml*4"
+    },
+    {
+        "img":"./images/6.jpg",
+        "price":"￥29.50",
+        "title": "【年货】即食燕麦片 1kg"
+    },
+    {
+        "img":"./images/7.jpg",
+        "price":"￥12.50",
+        "title": "【年货】有机木耳100g装"
+    },
+    {
+        "img":"./images/8.jpg",
+        "price":"￥99",
+        "title": "獐子岛 蒜蓉粉丝扇贝200g*5"
+    },
+    {
+      "img":"./images/1.jpg",
+      "price":"￥43",
+      "title": "百年栗园 北京油鸡母鸡 750g"
+    },
+    {
+      "img":"./images/2.jpg",
+      "price":"￥14.50",
+      "title": "通记莊 红枣葡萄沙琪玛 320g"
+    },
+     {
+        "img":"./images/3.jpg",
+        "price":"￥12.50",
+        "title": "ABC 杂粮谷物棒-蛋黄味180g"
+      },
+      {
+          "img":"./images/4.jpg",
+          "price":"￥119",
+          "title": "德亚酸牛奶 200ml*24"
+      },
+      {
+          "img":"./images/5.jpg",
+          "price":"￥12",
+          "title": "界界乐 芒果乳酸菌 100ml*4"
+      },
+      {
+          "img":"./images/6.jpg",
+          "price":"￥29.50",
+          "title": "【年货】即食燕麦片 1kg"
+      },
+      {
+          "img":"./images/7.jpg",
+          "price":"￥12.50",
+          "title": "【年货】有机木耳100g装"
+      },
+      {
+          "img":"./images/8.jpg",
+          "price":"￥99",
+          "title": "獐子岛 蒜蓉粉丝扇贝200g*5"
+      }
+]

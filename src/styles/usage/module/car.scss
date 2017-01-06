@@ -1,0 +1,5 @@
+@import "./common";
+.car {
+  @include flex();
+  width: 100%;
+}

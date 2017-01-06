@@ -1,4 +1,4 @@
-//var webpack = require('webpack');//压缩
+var webpack = require('webpack');//压缩
 var ET = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -36,10 +36,24 @@ module.exports = {
       {
         test:/\.html$/,
         loader:'string'
+      },
+      {
+        test:/\.vue$/,
+        loader:'vue'
       }
-    ]
+    ],
+    babel: {
+        babelrc: false,
+        presets: [
+            ['es2015']
+        ]
+    }
   },
-
+  vue: {
+    loaders: {
+      js: 'babel'
+    }
+  },
   devServer: {
     contentBase: __dirname + '/prd',
     port: 8080,
@@ -59,6 +73,12 @@ module.exports = {
 
   plugins: [
     //new webpack.optimize.UglifyJsPlugin(),//压缩
+    new webpack.optimize.UglifyJsPlugin({
+        compress: {
+            warnings: false,
+            drop_console: true
+        },
+    }),
     new ET('bundle.css')
   ]
 }

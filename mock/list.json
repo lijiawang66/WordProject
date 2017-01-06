@@ -1,10 +1,26 @@
 [
   {
-    "name": "aihong",
-    "age": 18
+    "name": "lm",
+    "img":"./images/lm.jpg",
+    "price":"￥13.50",
+    "title": "进口药蓝莓 约125g/盒"
   },
   {
-    "name": "junchao",
-    "age": 20
-  }
+    "name": "sj",
+    "img":"./images/sj.jpg",
+    "price":"￥7.50",
+    "title": "新鲜水饺 约15g/盒"
+  },
+   {
+      "name": "yp",
+      "img":"./images/yp.jpg",
+      "price":"￥33.50",
+      "title": "优质羊排 约1kg/盒"
+    },
+    {
+        "name": "yt",
+        "img":"./images/yt.jpg",
+        "price":"￥15.50",
+        "title": "进口樱桃 约105g/盒"
+      }
 ]
