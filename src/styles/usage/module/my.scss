@@ -1,5 +1,72 @@
 @import "./common";
-.my {
+.my{
+  @include flexbox();
+  @include flex-direction(column);
   @include flex();
   width: 100%;
+  height:100%;
+  // @extend %header;
+  // header{
+  //   height:.44rem;
+  //   background:rgba(255,255,255,0.3);
+  //   h3{
+  //     font-weight: normal;
+  //     text-align: center;
+  //     line-height: .44rem;
+  //   }
+  // }
+  section{
+    @include flex();
+    width:100%;
+    height:100%;
+    overflow-y: scroll;
+    .userinfo{
+      @include flexbox();
+      @include justify-content();
+      @include align-items(center);
+      width: 100%;
+      height: 200px;
+      background: url(/images/infobg.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    .login_rg {
+      width: 72px;
+      height: 72px;
+      background: #a6a2a1;
+      border-radius: 36px;
+      color: #FFF;
+      font-size: 12px;
+      p{
+        line-height: 72px;
+        text-align: center;
+        a{
+          color: #FFF;
+          font-size: 12px;
+        }
+      }
+    }
+    .userbox{
+      margin-top:.09rem;
+      li{
+        width:100%;
+        line-height: 43px;
+        color: #262626;
+        font-size: 15px;
+        background: #fff;
+        padding-left: 35px;
+        border-bottom: 1px solid #f0f0f0;
+        position: relative;
+        span{
+          line-height: 43px;
+          &:nth-child(1){
+            color: red;
+          }
+          &:nth-child(3){
+            position: absolute;
+            right:10px;
+          }
+        }
+      }
+    }
+  }
 }

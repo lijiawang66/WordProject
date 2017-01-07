@@ -21,3 +21,58 @@ $base-color: red;
   url('/images/fonts/footer.ttf?t=1483431906162') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('/images/fonts/footer.svg?t=1483431906162#iconfont') format('svg'); /* iOS 4.1- */
 }
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/infofont.eot?t=1483787563143'); /* IE9*/
+  src: url('/images/fonts/infofont.eot?t=1483787563143#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/infofont.woff?t=1483787563143') format('woff'), /* chrome, firefox */
+  url('/images/fonts/infofont.ttf?t=1483787563143') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/infofont.svg?t=1483787563143#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+%header{
+  header{
+    height:.44rem;
+    background:rgba(255,255,255,0.3);
+    @include border(0 0 1px 0,#CED6D0);
+    ul{
+      @include flexbox();
+      @include justify-content();
+      @include align-items(center);
+      height: 100%;
+      .search{
+        margin-left: .15rem;
+        padding:.13rem 0;
+        width:100%;
+        height:.26rem;
+        line-height:.26rem;
+        border-radius: 20px;
+        border:1px solid #ccc;
+        position: relative;
+        background: #fff;
+        i{
+          display: inline-block;
+          width:.14rem;
+          height:.125rem;
+          position: absolute;
+          left:.12rem;
+          top:.02rem;
+          color:#CCC;
+        }
+        input{
+          border:none;
+          background:none;
+          position: absolute;
+          top:.01rem;
+          left:.3rem;
+        }
+      }
+      li{
+        margin:0 .18rem;
+        line-height: .44rem;
+        font-size: .24rem;
+        color: #ccc;
+      }
+    }
+  }
+
+}

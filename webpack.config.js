@@ -42,12 +42,12 @@ module.exports = {
         loader:'vue'
       }
     ],
-    babel: {
-        babelrc: false,
-        presets: [
-            ['es2015']
-        ]
-    }
+    // babel: {
+    //     babelrc: false,
+    //     presets: [
+    //         ['es2015']
+    //     ]
+    // }
   },
   vue: {
     loaders: {
@@ -72,13 +72,13 @@ module.exports = {
   },
 
   plugins: [
-    //new webpack.optimize.UglifyJsPlugin(),//压缩
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false,
-            drop_console: true
-        },
-    }),
+    new webpack.optimize.UglifyJsPlugin(),//压缩
+    // new webpack.optimize.UglifyJsPlugin({
+    //     compress: {
+    //         warnings: false,
+    //         drop_console: true
+    //     },
+    // }),
     new ET('bundle.css')
   ]
 }

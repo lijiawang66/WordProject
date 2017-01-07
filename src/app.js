@@ -9,6 +9,7 @@ import home from "./scripts/component/home.vue";
 import list from "./scripts/component/list.vue";
 import car from "./scripts/component/car.vue";
 import my from "./scripts/component/my.vue";
+import search from "./scripts/component/Search.vue";
 
 // vue router 2
 const routes = [{
@@ -31,7 +32,12 @@ const routes = [{
       component:my
     }
   ]
-}]
+},
+  {
+    path: '/search',
+    component: search
+  }
+]
 
 const router = new VueRouter({
     routes // （缩写）相当于 routes: routes

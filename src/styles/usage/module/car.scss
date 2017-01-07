@@ -1,5 +1,45 @@
 @import "./common";
-.car {
+.car{
+  @include flexbox();
+  @include flex-direction(column);
   @include flex();
   width: 100%;
+  height:100%;
+  @extend %header;
+  header{
+    height:.44rem;
+    background:rgba(255,255,255,0.3);
+    h3{
+      font-weight: normal;
+      text-align: center;
+      line-height: .44rem;
+    }
+  }
+  section{
+    .cart-empty {
+      background: url(/images/gaosiao.gif) no-repeat;
+      width: 154px;
+      height: 150px;
+      background-size: 154px 150px;
+      margin: 50px auto 20px;
+    }
+    .noGood {
+      color: #b9b9b9;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom:20px;
+    }
+    .btn-gg {
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 5px;
+      background: #7d0023;
+      color: #FFF;
+      height: 44px;
+      width: 100%;
+      line-height: 44px;
+      font-size: 15px;
+      display: inline-block;
+    }
+  }
 }
